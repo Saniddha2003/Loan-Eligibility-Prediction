@@ -5,17 +5,17 @@
 
 
 import streamlit as st
-#import joblib
-import pickle
+import joblib
+#import pickle
 import pandas as pd
 
 # In[5]:
 
 
 def load():
-    with open('model.pkl','rb') as file:
-        loaded_model = pickle.load(file)
-        return loaded_model
+    #with open('model.pkl','rb') as file:
+    loaded_model = joblib.load('model.pkl')
+    return loaded_model
 
 
 # In[6]:
