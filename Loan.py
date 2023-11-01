@@ -12,7 +12,7 @@ import pandas as pd
 
 
 def load():
-    loaded_model = joblib.load('C:\\Users\\Saniddha Ghosh\\Project\\model.pkl')
+    loaded_model = joblib.load('model.pkl')
     return loaded_model
 
 
